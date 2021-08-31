@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>Paint App</title>
+        <link href="styles.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <center>
+            <div onclick="clearScreen()" id="clear">Clear Canvas</div>
+            <div id="wrapper">
+                <div id="shapes">
+                    <p onclick='drawType = "Pencil"'>Pencil</p>
+                    <p onclick='drawType = "Square"'>Square</p>
+                    <p onclick='drawType = "Line"'>Line</p>
+                    <p onclick='drawType = "Eraser"'>Eraser</p>
+                    <p onclick='drawType = "Ellipse"'>Ellipse</p>
+                    <p onclick='drawType = "Polygon"'>Polygon</p>
+                </div>
+                <div>
+                    <canvas id="front" class="paintApp" height="720" width="1280"></canvas>
+                    <canvas id="back" class="paintApp" height="720" width="1280"></canvas>
+                </div>
+                <div id="colors">
+
+                </div>
+            </div>
+        </center>
+        <script src="script.js"></script>
+    </body>
+</html>

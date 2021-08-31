@@ -1,0 +1,56 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(175, 213, 233);
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.paintApp {
+    margin-top: 20px;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#clear {
+    font-size: x-large;
+    width: 151.4px;
+    padding: 3px;
+    color: white;
+    background-color: #0095DD;
+}
+
+#back {
+    z-index: 0;
+    background-color: white;
+}
+
+#front {
+    position: absolute;
+    background-color: transparent;
+    z-index: 1;
+}
+
+#clear:hover {
+    cursor: pointer;
+}
+
+#shapes {
+    flex-direction: column;
+}
+
+#shapes p {
+    padding: 3px;
+    margin-right: 5px;
+    border: 1px solid grey;
+    background-color: white;
+}
+
+#shapes p:hover {
+    cursor: pointer;
+}
